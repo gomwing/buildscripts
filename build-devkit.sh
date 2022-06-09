@@ -28,7 +28,7 @@ echo
 
 
 DKARM_RULES_VER=1.2.1
-DKARM_CRTLS_VER=1.1.1
+DKARM_CRTLS_VER=1.1.0
 
 DKPPC_RULES_VER=1.1.0
 
@@ -88,6 +88,8 @@ else
 fi
 
 [ ! -z "$INSTALLDIR" ] && mkdir -p $INSTALLDIR && touch $INSTALLDIR/nonexistantfile && rm $INSTALLDIR/nonexistantfile || exit 1;
+
+export INSTALLDIR=$INSTALLDIR
 
 if test "`curl -V`"; then
 	FETCH="curl -f -L -O"
