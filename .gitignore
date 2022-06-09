@@ -3,6 +3,6 @@ config.sh
 .devkitPPC*
 .devkitA64*
 *.xz
-*.gz
+
 *.bz2
 *~
